@@ -265,7 +265,7 @@ void SSTable::compact() {
 
         vector<pair<uint64_t, list<pair<uint64_t, string>>>> allPairsWithStamp;
         pair<uint64_t, list<pair<uint64_t, string>>> pairsWithStamp;
-        vector<string> filesInvolved;
+        list<string> filesInvolved;
 
         int minkeyOfLevel = levels[i].begin()->minkey;
         int maxkeyOfLevel = levels[i].begin()->minkey;
@@ -274,7 +274,10 @@ void SSTable::compact() {
 
         // get all the sstables that needs to be compact on level i
         int j = 0;
+        int largestStampUsedForNewFiles = 0;
         for (auto iter = levels[i].begin(); j < loadLimit; ++j) {
+            if (iter->stamp > largestStampUsedForNewFiles)
+                largestStampUsedForNewFiles = iter->stamp;
             loadData(iter->path, pairsWithStamp);
             allPairsWithStamp.push_back(pairsWithStamp);
 
@@ -288,15 +291,18 @@ void SSTable::compact() {
         // find the interleaving sstables on level i + 1
         int interleavingNumber = 0;
         if (i + 1 < levels.size()) {
-            for (auto iter = levels[i + 1].begin(); iter != levels[i + 1].end(); iter++) {
-                if (iter->maxkey < minkeyOfLevel || iter->minkey > maxkeyOfLevel)
+            for (auto iter = levels[i + 1].begin(); iter != levels[i + 1].end();) {
+                if (iter->maxkey < minkeyOfLevel || iter->minkey > maxkeyOfLevel) {
+                    ++iter;
                     continue;
+                }
 
+                if (iter->stamp > largestStampUsedForNewFiles)
+                    largestStampUsedForNewFiles = iter->stamp;
                 loadData(iter->path, pairsWithStamp);
                 allPairsWithStamp.push_back(pairsWithStamp);
                 filesInvolved.push_back(iter->path);
                 iter = levels[i + 1].erase(iter);
-                iter--;
                 interleavingNumber++;
             }
         }
@@ -311,8 +317,8 @@ void SSTable::compact() {
         while (iter != totalResult.end()) {
             list<pair<uint64_t, string>> pairs;
             Buffer buffer;
-            buffer.stamp = globalStamp;
-            buffer.path = root + "/level-" + to_string(i + 1) + "/" + to_string(buffer.stamp) + "-" + to_string(writeTimes) + ".sst";
+            buffer.stamp = largestStampUsedForNewFiles;
+            buffer.path = root + "/level-" + to_string(i + 1) + "/" + to_string(buffer.stamp) + "-" + to_string(fileId++) + ".sst";
             buffer.minkey = iter->first;
             buffer.maxkey = iter->first;
             uint32_t memSize = INITIAL_MEM;
@@ -342,7 +348,6 @@ void SSTable::compact() {
             levels[i + 1].push_back(buffer);
             if (iter == totalResult.end()) break;
         }
-        globalStamp++;
 
         for (const string &file: filesInvolved) {
             utils::rmfile(file.c_str());
@@ -434,6 +439,7 @@ void SSTable::scan(uint64_t key1, uint64_t key2, list<pair<uint64_t, string>> &o
 
     // key stamp value
     list<pair<pair<uint64_t, uint64_t>, string>> diskList;
+    vector<int> a;
 
     for (int i = 0; i < levels.size(); ++i) {
         for (auto buffer = levels[i].begin(); buffer != levels[i].end(); ++buffer) {

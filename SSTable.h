@@ -21,6 +21,7 @@
 #define DELETED "~DELETED~"
 
 extern uint64_t globalStamp;
+extern uint64_t fileId;
 
 using namespace std;
 

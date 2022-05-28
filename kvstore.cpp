@@ -3,9 +3,11 @@
 #include "kvstore.h"
 
 uint64_t globalStamp = 0;
+uint64_t fileId = 0;
 
 KVStore::KVStore(const string &dir) : KVStoreAPI(dir) {
     globalStamp = 0;
+    fileId = 0;
     this->dir = dir;
     ssTable = new SSTable(dir);
     memTable = new MemTable(dir);
@@ -35,7 +37,7 @@ void KVStore::put(uint64_t key, const string &s) {
 std::string KVStore::get(uint64_t key) {
     string result;
 
-    if (key == 5386) {
+    if (key == 7749) {
         int a = 1;
     }
     if (memTable->search(key, result))
@@ -74,6 +76,7 @@ void KVStore::reset() {
     delete ssTable;
 
     globalStamp = 0;
+    fileId = 0;
     ssTable = new SSTable(dir);
     memTable = new MemTable(dir);
 }

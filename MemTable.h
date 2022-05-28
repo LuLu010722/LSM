@@ -20,6 +20,7 @@
 #define BLOOM_FILTER_SIZE 10240
 
 extern uint64_t globalStamp;
+extern uint64_t fileId;
 
 using namespace std;
 

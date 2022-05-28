@@ -139,7 +139,7 @@ void MemTable::write() {
     if (!utils::dirExists(outPath))
         utils::mkdir(outPath.c_str());
     stamp = globalStamp++;
-    ofstream out(outPath + "/" + to_string(stamp) + ".sst", ios::out | ios::binary);
+    ofstream out(outPath + "/" + to_string(stamp) + "-" + to_string(fileId++) + ".sst", ios::out | ios::binary);
     out.write((char *) (&stamp), 8);
     out.write((char *) (&size), 8);
     out.write((char *) (&minkey), 8);
