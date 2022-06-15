@@ -37,12 +37,10 @@ void KVStore::put(uint64_t key, const string &s) {
 std::string KVStore::get(uint64_t key) {
     string result;
 
-    if (key == 7749) {
-        int a = 1;
-    }
     if (memTable->search(key, result))
         return result;
 
+//    else if (ssTable->searchWithoutCache(key, result))
     else if (ssTable->search(key, result))
         return result;
 
@@ -54,9 +52,6 @@ std::string KVStore::get(uint64_t key) {
  * Returns false iff the key is not found.
  */
 bool KVStore::del(uint64_t key) {
-    if (key == 4546) {
-        int a = 1;
-    }
     string value = get(key);
 
     if (value == "" || value == "~DELETED~")
@@ -87,12 +82,8 @@ void KVStore::reset() {
  * An empty string indicates not found.
  */
 void KVStore::scan(uint64_t key1, uint64_t key2, list<pair<uint64_t, string>> &list) {
-//    for (uint64_t i = key1; i <= key2; ++i) {
-//        string result = get(i);
-//        if (result.length()) {
-//            list.push_back(make_pair(i, result));
-//        }
-//    }
+
+
     memTable->scan(key1, key2, list);
     ssTable->scan(key1, key2, list);
 

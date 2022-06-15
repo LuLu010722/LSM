@@ -258,6 +258,55 @@ bool SSTable::search(uint64_t key, string &output) {
     return true;
 }
 
+bool SSTable::searchWithoutCache(uint64_t key, string &output) {
+
+    list<pair<uint64_t, string>> pairs;
+
+    for (int i = 0; i < levels.size(); ++i) {
+        for (auto buffer: levels[i]) {
+            ifstream in(buffer.path, ios::binary | ios::in);
+
+            uint64_t stamp;
+            uint64_t size;
+            uint64_t minkey;
+            uint64_t maxkey;
+
+            in.read((char *) &stamp, 8);
+            in.read((char *) &size, 8);
+            in.read((char *) &minkey, 8);
+            in.read((char *) &maxkey, 8);
+
+            if (key > maxkey || key < minkey) continue;
+
+            in.seekg(BLOOM_FILTER_SIZE, ios::cur);
+            for (int j = 0; j < size; ++j) {
+                uint64_t tmp_key;
+                uint64_t offset;
+                in.read((char *) &tmp_key, 8);
+                if (tmp_key < key) continue;
+                else if (tmp_key == key) {
+                    if (pairs.size() && pairs.begin()->first > stamp) break;
+                    in.read((char *) &offset, 4);
+                    in.seekg(offset, ios::beg);
+                    string line;
+                    getline(in, line, '\0');
+                    pairs.push_front(make_pair(stamp, line));
+                }
+                else break;
+            }
+        }
+    }
+    if (pairs.size() == 0)
+        return false;
+
+    if (pairs.begin()->second == DELETED)
+        return false;
+
+    output = pairs.begin()->second;
+    return true;
+
+}
+
 void SSTable::compact() {
 
     for (int i = 0; i < levels.size(); ++i) {

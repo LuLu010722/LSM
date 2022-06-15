@@ -66,6 +66,8 @@ public:
 
     bool search(uint64_t key, string &output);
 
+    bool searchWithoutCache(uint64_t key, string &output);
+
     void compact();
 
     void updateLevel0();
