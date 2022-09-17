@@ -1,0 +1,17 @@
+# ninja log v5
+3	1561	6754470105399680	CMakeFiles/correctness.dir/MemTable.cpp.obj	efd5e56692bad241
+1584	2134	6749980805893285	persistence.exe	f3546284e10f2e51
+683	831	6744041403721481	test.exe	93cf51e28cbe8730
+4	1584	6749980800445426	CMakeFiles/persistence.dir/persistence.cc.obj	77cdbd9530cc7319
+4	1515	6754483321633371	CMakeFiles/LSM.dir/main.cpp.obj	64d92d17748014c8
+23	2221	6754479349934656	CMakeFiles/LSM.dir/kvstore.cpp.obj	fde532be8f79b769
+14	2863	6754311981690471	CMakeFiles/LSM.dir/SSTable.cpp.obj	68128456357ce033
+27	2284	6754479350588813	CMakeFiles/LSM.dir/MemTable.cpp.obj	31c716c4e3b71513
+1516	2021	6754483326650537	LSM.exe	7ed2ed056cd4cd47
+3	1985	6754466591660637	CMakeFiles/correctness.dir/kvstore.cpp.obj	deee0f70772e53b7
+3	1723	6754470267922898	CMakeFiles/correctness.dir/correctness.cc.obj	42aeee4037fcbfd5
+21	3797	6754453591243422	CMakeFiles/correctness.dir/SSTable.cpp.obj	7794a1ba14d0228a
+1723	2245	6754470273112590	correctness.exe	2383b668c4fa2a86
+23	1805	6749980476991964	CMakeFiles/persistence.dir/MemTable.cpp.obj	ddd6babb338326a3
+21	1671	6749980475678911	CMakeFiles/persistence.dir/kvstore.cpp.obj	e6d5042516348e8c
+17	2487	6749980483771788	CMakeFiles/persistence.dir/SSTable.cpp.obj	67483b1d41df9538

@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "untitled",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LSM::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LSM-Debug-6e61bf5e3bb056b83e23.json",
+					"name" : "LSM",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "correctness::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-correctness-Debug-babc9e90657cd5e22466.json",
+					"name" : "correctness",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "persistence::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-persistence-Debug-6f1e16af2f8fcd2d4966.json",
+					"name" : "persistence",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/desktop/ADS/project/codes/cmake-build-debug",
+		"source" : "D:/desktop/ADS/project/codes"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

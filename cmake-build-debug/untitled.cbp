@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="untitled"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="persistence">
+				<Option output="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/persistence" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 persistence"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="persistence/fast">
+				<Option output="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/persistence" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 persistence/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LSM">
+				<Option output="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/LSM" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 LSM"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LSM/fast">
+				<Option output="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/LSM" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 LSM/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correctness">
+				<Option output="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/correctness" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 correctness"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correctness/fast">
+				<Option output="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/correctness" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 correctness/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/38466/Desktop/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/MemTable.cpp">
+			<Option target="persistence"/>
+			<Option target="LSM"/>
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/MemTable.h">
+			<Option target="persistence"/>
+			<Option target="LSM"/>
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/MurmurHash3.h">
+			<Option target="persistence"/>
+			<Option target="LSM"/>
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/SSTable.cpp">
+			<Option target="persistence"/>
+			<Option target="LSM"/>
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/SSTable.h">
+			<Option target="persistence"/>
+			<Option target="LSM"/>
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/correctness.cc">
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/kvstore.cpp">
+			<Option target="persistence"/>
+			<Option target="LSM"/>
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/kvstore.h">
+			<Option target="persistence"/>
+			<Option target="LSM"/>
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/kvstore_api.h">
+			<Option target="persistence"/>
+			<Option target="LSM"/>
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/main.cpp">
+			<Option target="LSM"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/persistence.cc">
+			<Option target="persistence"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/utils.h">
+			<Option target="persistence"/>
+			<Option target="LSM"/>
+			<Option target="correctness"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/38466/Desktop/untitled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

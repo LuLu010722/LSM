@@ -1,0 +1,5 @@
+D:/desktop/ADS/project/codes/cmake-build-debug/CMakeFiles/LSM.dir
+D:/desktop/ADS/project/codes/cmake-build-debug/CMakeFiles/correctness.dir
+D:/desktop/ADS/project/codes/cmake-build-debug/CMakeFiles/persistence.dir
+D:/desktop/ADS/project/codes/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/desktop/ADS/project/codes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
